@@ -1,0 +1,10 @@
+{
+    "name": "com.kiwigamedev.unity-kiwi",
+    "displayName": "Unity Kiwi",
+    "version": "1.0.0",
+    "unity": "2021.3",
+    "description": "A collection of common core utilities in Unity I generally use.",
+    "license": "MIT",
+	"keywords": [ "Utils", "Editor", "Extensions" ],
+    "dependencies": {}
+}
