@@ -2,6 +2,7 @@ using System;
 
 namespace Kiwi.Editor
 {
+#if UNITY_EDITOR
 	public abstract class TweakableEditor : UnityEditor.Editor
 	{
 		public override void OnInspectorGUI()
@@ -21,4 +22,5 @@ namespace Kiwi.Editor
 
 		static readonly string[] emptyStringArray = Array.Empty<string>();
 	}
+#endif
 }
