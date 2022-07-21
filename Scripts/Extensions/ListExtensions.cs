@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Random = UnityEngine.Random;
 
 namespace Kiwi.Extensions
@@ -61,6 +62,19 @@ namespace Kiwi.Extensions
             }
             
             return list[index];
+        }
+
+        public static T2 SelectFirst<T1, T2>(this List<T1> list, Func<T1, T2> callback) where T2 : class
+        {
+            foreach (T1 t1 in list)
+            {
+                T2 t2 = callback(t1);
+
+                if (t2 != null)
+                    return t2;
+            }
+
+            return null;
         }
     }
 }
