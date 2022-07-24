@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Random = UnityEngine.Random;
 
 namespace Kiwi.Extensions
@@ -47,9 +46,9 @@ namespace Kiwi.Extensions
             return null;
         }
 
-        public static T GetRandom<T>(this List<T> array)
+        public static T GetRandom<T>(this List<T> list)
         {
-            return array[Random.Range(0, array.Count)];
+            return list[Random.Range(0, list.Count)];
         }
         
         public static T GetRandomExcept<T>(this List<T> list, int exemptIndex)
@@ -62,6 +61,11 @@ namespace Kiwi.Extensions
             }
             
             return list[index];
+        }
+
+        public static T PopRandom<T>(this List<T> list)
+        {
+            return list.PopAt(Random.Range(0, list.Count));
         }
 
         public static T2 SelectFirst<T1, T2>(this List<T1> list, Func<T1, T2> callback) where T2 : class
