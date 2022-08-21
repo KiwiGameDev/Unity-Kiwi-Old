@@ -1,6 +1,6 @@
-namespace Kiwi.Extensions
+namespace Kiwi.Helpers
 {
-	public static class Math
+	public static class MoreMath
 	{
 		public static double Map(double value, double x1, double y1, double x2, double y2)
 		{
