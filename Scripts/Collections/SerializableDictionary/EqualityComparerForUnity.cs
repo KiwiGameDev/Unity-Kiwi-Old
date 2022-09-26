@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Kiwi.SerializableDictionary
+namespace Kiwi.Collections.SerializableDictionary
 {
     class EqualityComparerForUnity<T>
     {

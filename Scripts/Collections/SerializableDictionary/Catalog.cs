@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Kiwi.SerializableDictionary
+namespace Kiwi.Collections.SerializableDictionary
 {
     public class Catalog { }
 
