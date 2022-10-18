@@ -51,6 +51,16 @@ namespace Kiwi.Extensions
             return list[Random.Range(0, list.Count)];
         }
         
+        public static T GetRandomOrDefault<T>(this List<T> list)
+        {
+            if (list.Count > 0)
+            {
+                return list[Random.Range(0, list.Count)];
+            }
+
+            return default;
+        }
+
         public static T GetRandomExcept<T>(this List<T> list, int exemptIndex)
         {
             int index = Random.Range(0, list.Count - 1);
